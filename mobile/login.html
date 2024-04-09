@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Home</title>
+    <link rel="stylesheet" href="../assets/css/mobile/mobile.css">
+    <link rel="stylesheet" href="../assets/css/mobile/font-awesome.css">
+
+</head>
+<body class="theme-color-1">
+
+<div class="container demo-1">
+
+    <header class="header" style="background: #ffffff" id="header">
+        <a href="#" class="bloc-icon">
+            <img src="../assets/img/favicon/logo_black.png" alt="" >
+        </a>
+        <a href="search.html" class="bloc-icon search-item">
+            <i class="fa fa-search fa-2x"></i>
+        </a>
+    </header>
+
+
+
+    <nav class="mobile-nav" style="background-color: rgb(33,33,33)!important; color: #ffffff!important;">
+        <a href="../index.html" class="bloc-icon">
+            <i class="fa fa-home fa-lg"></i>
+            <h6>Accueil</h6>
+        </a>
+        <a href="#" class="bloc-icon ville">
+            <i class="fa fa-map fa-lg"></i>
+            <h6>Villes</h6>
+        </a>
+        <a href="partner.html" class="bloc-icon menu-rounded">
+            PUBLIER
+        </a>
+        <a href="#" class="bloc-icon categorie">
+            <i class="fa fa-cubes fa-lg"></i>
+            <h6>Categorie</h6>
+        </a>
+        <a href="#" class="bloc-icon account">
+            <i class="fa fa-user-circle fa-lg"></i>
+            <h6>Mon compte</h6>
+        </a>
+    </nav>
+</div>
+
+<section class="content demo-1">
+    <div class="title-h1  bg-tchizza">
+        <h1 class="text-white"><i class="fa fa-lock"></i>&nbsp;CONNEXION</h1>
+    </div>
+</section>
+
+<section class="login-page section-b-space  demo-1" style="margin: 10px;padding: 5px 10px;line-height: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="h1 text-tchizza">Se Connecter</h3>
+                <div class="theme-card">
+                    <form class="theme-form" method='POST' action="/login">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="w6o6MirlyUHRRr5bMwzcjOYzWpvatbdMCAkK3DBRBkrxRDWtSxROcG5hiYxG2Ckc">
+                        <div class="form-group">
+                            <label for="username">Votre Nom</label>
+                            <input type="text" class="form-control" name='username' id="username" placeholder="Nom d'utilisateur" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name='password' placeholder="Mot de passe" required="">
+                        </div>
+
+                        <!-- <a href="#"  class="btn btn-solid">Login</a> -->
+                        <button class="btn btn-solid btn-tchizza" style="margin: 10px 0px"> Se connecter</button>
+                    </form>
+
+                    <h5 class="mt-5"> <a  class="text-tchizza" href="/reset_password">Mot de passe oublié ?</a> </h5>
+
+                </div>
+            </div>
+            <div class="col-lg-6 right-login">
+                <h3 class="h1 text-tchizza">Faire des publications</h3>
+                <div class="theme-card authentication-right">
+                    <h6 class="title-h1">Créer une Publication</h6>
+                    <p>Créer un compte gratuitement. Enregistrez-vous facilement. Le compte vous permet de faire des publications et d'actualiser vos contenus.</p>
+                    <h5><a href="register.html" class="text-tchizza">Créer mon compte</a></h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section ends-->
+
+
+
+<!-- Modal -->
+<div class="modal animated fadeInDown" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1000000; position: fixed">
+    <div class="modal-dialog" role="document" style="z-index: 1000000; position: fixed; width: auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><img src="../assets/img/favicon/logo_black.png" style="max-height: 50px; margin: auto" alt=""></h5>
+                <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="text-tchizza text-center">!! ATTENTION !!!</h2>
+                <div class="alert alert-warning alert-dismissible d-flex align-items-center fade show ">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> tchizza.com n'est pa sresponsable des produits et services dans les annonce.
+                </div>
+                <div class="alert alert-danger alert-dismissible d-flex align-items-center fade show">
+                    <p>
+                        <i class="fa fa-times" aria-hidden="true"></i> Ne JAMAIS payer le transport à un(e) client(e) que vous ne connaissez pas. <br>
+                        <i class="fa fa-times" aria-hidden="true"></i> Ne JAMAIS faire d'avance de paiement sans être avec la personne concernée. <br>
+                        <i class="fa fa-times" aria-hidden="true"></i> Ne pas faire confiance pour un service trop beau pour être vrai. <br>
+
+                    </p>
+                </div>
+                <div class="alert alert-success alert-dismissible d-flex align-items-center fade show">
+                    <p>
+                        <i class="fa fa-check" aria-hidden="true"></i>Dénoncer l'annonce avec preuves si vous êtes victime d'une tentative d'arnaque. <br>
+                    </p>
+                </div>
+                <h5 style="color: #E4142E;">Appel et dit <span style="font-weight: bold;">Je veux une TCHIZZA</span> </h5>
+                <p style="color: #1d1818;">Précicer-moi que vous avez trouvé la publication sur TCHIZZA.COM <br> Merci </p>
+            </div>
+            <div class="modal-footer text-center" style="justify-content: center">
+                <a href="" class="btn btn-success btn-sm"><i class="fa fa-whatsapp text-white">&nbsp;Whatsapp</i></a>
+                <a href="" class="btn btn-dark btn-sm"><i class="fa fa-phone text-white">&nbsp;Appel</i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal animated fadeInDown" id="account" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1000000; position: fixed">
+    <div class="modal-dialog" role="document" style="z-index: 1000000; position: fixed; width: 95%!important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accountlabel"><img src="../assets/img/favicon/logo_black.png" style="max-height: 50px; margin: auto" alt=""></h5>
+                <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="title-h1">
+                    <h2 style="text-align: center"><a href="login.html" style="color: #000000; text-decoration: none"><i class="fa fa-lock text-tchizza fa-2x"></i>&nbsp;<br>Connexion</a></h2>
+                    <br>
+                    <hr style="width: 30%; margin: auto;" class="bg-tchizza">
+                    <br>
+                    <h2 style="text-align: center"><a href="register.html" style="color: #000000; text-decoration: none"><i class="fa fa-edit text-tchizza fa-2x"></i>&nbsp;<br>Creer un compte</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal animated fadeInDown" id="ville" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1000000; position: fixed">
+    <div class="modal-dialog" role="document" style="z-index: 1000000; position: fixed; width: 95%!important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <section class="content" style="height: auto; margin: 0px!important;">
+                    <div class="title-h1  bg-tchizza">
+                        <h1 class="text-white"><i class="fa fa-map"></i>&nbsp;Villes Chaude</h1>
+                    </div>
+                </section>
+
+                <div class="grid">
+                    <div class="grid-item"><a href="">Douala <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Yaoundé <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Kribi <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Bafoussam <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Ebolowa <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Ebolowa <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Douala <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Yaoundé <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Kribi <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Bafoussam <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Ebolowa <span class="item-total">100</span></a></div>
+                    <div class="grid-item"><a href="">Ebolowa <span class="item-total">100</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal animated fadeInDown" id="categorie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1000000; position: fixed">
+    <div class="modal-dialog" role="document" style="z-index: 1000000; position: fixed; width: 95%!important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="categorielabel"><img src="../assets/img/favicon/logo_black.png" style="max-height: 50px; margin: auto" alt=""></h5>
+                <button type="button" class="close btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <section class="content"  style="height: auto; margin: 0px!important;">
+                    <div class="title-h1  bg-tchizza">
+                        <h1 class="text-white"><i class="fa fa-cubes"></i>&nbsp;CATEGORIES</h1>
+                    </div>
+                </section>
+
+                <div class="grid" style="font-size: 12px!important;">
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Skiny <span class="item-total">20</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Ronde <span class="item-total">15</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Grosse poitrine <span class="item-total">45</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Gros cul <span class="item-total">30</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Noire <span class="item-total">60</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Brune <span class="item-total">15</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Vaginale <span class="item-total">70</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Anal <span class="item-total">05</span></a></div>
+                    <div class="grid-item"><a href="" style="font-size: 12px!important;">Mature <span class="item-total">10</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(e){
+
+        $(".whatsapp").click(function(){
+            $("#exampleModal").css({
+                "display":"block",
+                "-webkit-animation-duration": "1s",
+                "animation-duration":"1s",
+                "animation-fill-mode":"both",
+                "animation-fill-mode":"both",
+            });
+        });
+
+        $(".account").click(function(){
+            $("#account").css({
+                "display":"block",
+                "-webkit-animation-duration": "1s",
+                "animation-duration":"1s",
+                "animation-fill-mode":"both",
+                "animation-fill-mode":"both",
+            });
+        });
+
+        $(".ville").click(function(){
+            $("#ville").css({
+                "display":"block",
+                "-webkit-animation-duration": "1s",
+                "animation-duration":"1s",
+                "animation-fill-mode":"both",
+                "animation-fill-mode":"both",
+            });
+        });
+
+        $(".categorie").click(function(){
+            $("#categorie").css({
+                "display":"block",
+                "-webkit-animation-duration": "1s",
+                "animation-duration":"1s",
+                "animation-fill-mode":"both",
+                "animation-fill-mode":"both",
+            });
+        });
+
+        $(".close").click(function(){
+            $("#exampleModal").css({
+                "display":"none"
+            });
+            $("#account").css({
+                "display":"none"
+            });
+            $("#categorie").css({
+                "display":"none"
+            });
+            $("#ville").css({
+                "display":"none"
+            });
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+    $(function(){
+        if($(window).width() >= 750){
+            window.location.href = "http://localhost/tchizza2.0/desk/login.html"
+        }
+    });
+</script>
+</body>
+</html>
